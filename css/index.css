@@ -1,1 +1,238 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+header {
+  text-align: right;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-right: 1.5rem;
+}
+.main-container {
+  background: lightgray;
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+.main-container h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.main-container h4 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.3rem;
+}
+.main-container p {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.main-container .hdr-button {
+  background: darkgray;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.top-content {
+  display: flex;
+  flex-direction: row;
+}
+.top-content .top-text {
+  width: 30rem;
+  padding-right: 2rem;
+}
+.top-content h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.top-content p {
+  font-size: 1.2rem;
+}
+.top-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.top-content li {
+  border: 1px solid lightgray;
+  font-size: 1.3rem;
+  padding: 0.8rem;
+  width: 25rem;
+}
+.bottom-content {
+  margin-top: 2rem;
+}
+.bottom-content h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.bottom-content table {
+  width: 100%;
+}
+.bottom-content tr:nth-child(even) {
+  background-color: lightgray;
+}
+.bottom-content th {
+  text-align: left;
+  border: 1px solid lightgray;
+  padding: 15px;
+  font-weight: bold;
+}
+.bottom-content td {
+  border: 1px solid lightgray;
+  padding: 15px;
+}
+footer {
+  background: gray;
+  margin-top: 1.3rem;
+  height: 4rem;
+}
+footer p {
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
