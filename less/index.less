@@ -150,11 +150,16 @@ body {
 
 //Mixins
 
-.hdr(){
+.hdr() {
 	font-size: 1.5rem;
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
 
+}
+
+.flex() {
+	display: flex;
+	flex-direction: row;
 }
 
 .container {
@@ -185,14 +190,15 @@ header {
 	h1 {
 		font-size: 4rem;
 		margin-bottom: 1rem;
-		
+
 	}
-	h4 { 
+
+	h4 {
 		font-size: 1.4rem;
 		border-bottom: 1px solid black;
 		padding-bottom: 1.3rem;
 	}
-	
+
 	p {
 		font-size: 1.5rem;
 		margin-top: 1.2rem;
@@ -209,27 +215,26 @@ header {
 }
 
 .top-content {
-	display: flex;
-	flex-direction: row;
-	
+	.flex();
+
 	.top-text {
 		width: 30rem;
 		padding-right: 2rem;
 	}
 
-	h2{
-		.hdr
+	h2 {
+		.hdr();
 	}
 
-	p{
+	p {
 		font-size: 1.2rem;
 	}
 
-	h3{
-		.hdr
+	h3 {
+		.hdr();
 	}
 
-	li{
+	li {
 		border: 1px solid @ltgray;
 		font-size: 1.3rem;
 		padding: .8rem;
@@ -237,39 +242,53 @@ header {
 	}
 }
 
-.bottom-content{
+.bottom-content {
 	margin-top: 2rem;
 
-	h2{
-		.hdr
+	h2 {
+		.hdr();
 	}
-	table{
+
+	table {
 		width: 100%;
-		}
+	}
 
-		tr:nth-child(even) {
-			background-color: @ltgray;
-		  }
+	tr:nth-child(even) {
+		background-color: @ltgray;
+	}
 
-		th{
-			text-align: left;
-			border: 1px solid @ltgray;
-			padding: 15px;
-			font-weight: bold;
-		}
+	th {
+		text-align: left;
+		border: 1px solid @ltgray;
+		padding: 15px;
+		font-weight: bold;
+	}
 
-		td{
-			border: 1px solid @ltgray;
-			padding: 15px;
-		}
+	td {
+		border: 1px solid @ltgray;
+		padding: 15px;
+	}
 }
 
-footer{
+.contact {
+	background: @ltgray;
+	padding: 2rem;
+	padding-bottom: 5rem;
+	margin-top: 2rem;
+	text-align: center;
+
+	h4 {
+		.hdr();
+	}
+}
+
+
+footer {
 	background: gray;
 	margin-top: 1.3rem;
 	height: 4rem;
 
-	p{
+	p {
 		text-align: center;
 		color: white;
 		padding: 1.5rem;

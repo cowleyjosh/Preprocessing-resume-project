@@ -226,6 +226,18 @@ header a {
   border: 1px solid lightgray;
   padding: 15px;
 }
+.contact {
+  background: lightgray;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.contact h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
 footer {
   background: gray;
   margin-top: 1.3rem;
