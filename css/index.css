@@ -138,6 +138,12 @@ body {
   width: 880px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    height: 100%;
+  }
+}
 header {
   text-align: right;
   margin-top: 1.5rem;
@@ -149,14 +155,31 @@ header a {
   font-size: 1.4rem;
   padding-right: 1.5rem;
 }
+@media (max-width: 500px) {
+  header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 2rem;
+  }
+}
 .main-container {
   background: lightgray;
   padding: 2rem;
   padding-bottom: 5rem;
 }
+.main-container .logo {
+  padding: 2rem;
+}
 .main-container h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container h1 {
+    font-size: 2rem;
+  }
 }
 .main-container h4 {
   font-size: 1.4rem;
@@ -175,18 +198,44 @@ header a {
   padding: 0.6rem;
   border-radius: 0.5rem;
 }
+@media (max-width: 500px) {
+  .main-container .hdr-button {
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
+}
 .top-content {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .top-content .top-text {
   width: 30rem;
   padding-right: 2rem;
 }
+@media (max-width: 500px) {
+  .top-content .top-text {
+    width: 29rem;
+  }
+}
 .top-content h2 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .top-content h2 {
+    text-align: center;
+    width: 29.4rem;
+    margin-top: 3rem;
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+  }
 }
 .top-content p {
   font-size: 1.2rem;
@@ -196,11 +245,24 @@ header a {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  .top-content h3 {
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+  }
+}
 .top-content li {
   border: 1px solid lightgray;
   font-size: 1.3rem;
   padding: 0.8rem;
   width: 25rem;
+}
+@media (max-width: 500px) {
+  .top-content li {
+    width: 28rem;
+  }
 }
 .bottom-content {
   margin-top: 2rem;
@@ -209,6 +271,15 @@ header a {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .bottom-content h2 {
+    text-align: center;
+    width: 29.4rem;
+    margin-top: 3rem;
+    border-top: 1px solid lightgray;
+    padding-top: 2rem;
+  }
 }
 .bottom-content table {
   width: 100%;

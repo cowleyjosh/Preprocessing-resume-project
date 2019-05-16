@@ -165,6 +165,13 @@ body {
 .container {
 	width: 880px;
 	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		
+		  width: 95%;
+		  height: 100%;
+		
+	  }
 }
 
 header {
@@ -172,12 +179,21 @@ header {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 
+	
 	a {
 		color: black;
 		text-decoration: none;
 		font-size: 1.4rem;
 		padding-right: 1.5rem;
-
+	
+		@media (max-width: 500px) {
+		
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border: 1px solid @ltgray;
+			padding: 2rem;
+		}
 
 	}
 }
@@ -187,10 +203,20 @@ header {
 	padding: 2rem;
 	padding-bottom: 5rem;
 
+	.logo {
+		padding: 2rem;
+	
+	}
+	
 	h1 {
 		font-size: 4rem;
 		margin-bottom: 1rem;
 
+		@media (max-width: 500px) {
+		
+		font-size: 2rem;
+		}
+	
 	}
 
 	h4 {
@@ -211,27 +237,65 @@ header {
 		font-size: 1rem;
 		padding: .6rem;
 		border-radius: .5rem;
+
+		@media (max-width: 500px) {
+		
+			margin-left: 5rem;
+			font-size: 2rem;
+			}
+		
 	}
 }
 
 .top-content {
 	.flex();
 
+	@media (max-width: 500px) {
+		
+		display: flex;
+		flex-direction: column;
+		}
+
 	.top-text {
 		width: 30rem;
 		padding-right: 2rem;
+
+		@media (max-width: 500px) {
+		
+			width: 29rem;
+			}
 	}
 
 	h2 {
 		.hdr();
+
+		@media (max-width: 500px) {
+		
+			text-align: center;
+			width: 29.4rem;
+			margin-top: 3rem;
+			border-top: 1px solid @ltgray;
+			padding-top: 2rem;
+
+			}
 	}
 
 	p {
 		font-size: 1.2rem;
+
+	
 	}
 
 	h3 {
 		.hdr();
+
+		@media (max-width: 500px) {
+		
+			text-align: center;
+			margin-top: 3rem;
+			border-top: 1px solid @ltgray;
+			padding-top: 2rem;
+			}
 	}
 
 	li {
@@ -239,6 +303,11 @@ header {
 		font-size: 1.3rem;
 		padding: .8rem;
 		width: 25rem;
+
+		@media (max-width: 500px) {
+		
+			width: 28rem;
+			}
 	}
 }
 
@@ -247,6 +316,16 @@ header {
 
 	h2 {
 		.hdr();
+
+		@media (max-width: 500px) {
+		
+			text-align: center;
+			width: 29.4rem;
+			margin-top: 3rem;
+			border-top: 1px solid @ltgray;
+			padding-top: 2rem;
+
+			}
 	}
 
 	table {
